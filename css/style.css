@@ -97,6 +97,7 @@ nav.navegacion a{
     display: block;
     font-size: 1.8rem;
     text-align: center;
+    margin: 0.5rem;
 }
 
 /* Blog */
@@ -136,8 +137,6 @@ nav.navegacion a{
     list-style: none;
 }
 
-
-
 .cursos__nombre{
     font-weight: bold;
     font-size: 2rem;
@@ -156,6 +155,30 @@ nav.navegacion a{
 }
 li.lista-cursos p{
     font-family: var(--fuenteHeading);
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--negro);
+    padding: 1.5rem 0;
+}
+
+/* nosotros */
+
+.contenedor-general-nosotros{
+    padding-bottom: 2rem;
+}
+
+/* cursos */
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+.curso:last-of-type{
+    border: none;
 }
 
 @media only screen and (min-width: 768px){
@@ -185,4 +208,19 @@ li.lista-cursos p{
     .boton{
         display:inline-block;
     }
+
+    /* nosotros */
+
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .curso{
+        display: grid;
+        grid-template-columns: 0.3fr 0.8fr;
+        gap: 2rem;
+    }
+
 }
