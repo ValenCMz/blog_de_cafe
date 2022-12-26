@@ -181,6 +181,40 @@ li.lista-cursos p{
     border: none;
 }
 
+/* contacto */
+
+/* lo ponemos como background */
+.imagen__formulario{
+    background-image: url(../img/nosotros.jpg);
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor-formulario{
+    background-color: var(--blanco);
+    width: 95%;
+    margin: -5rem auto 0 auto;
+    padding: 2rem;
+}
+
+.campo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem
+}
+
+.campo__input{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
 @media only screen and (min-width: 768px){
     .barra{
         display: flex;
