@@ -194,9 +194,12 @@ li.lista-cursos p{
 .contenedor-formulario{
     background-color: var(--blanco);
     width: 95%;
-    margin: -5rem auto 0 auto;
+    margin: -5rem auto 5rem auto;
     padding: 2rem;
-}
+    -webkit-box-shadow: 0px 1px 24px 9px rgba(222,181,101,1);
+    -moz-box-shadow: 0px 1px 24px 9px rgba(222,181,101,1);
+    box-shadow: 0px 1px 24px 9px rgba(222,181,101,1);
+}   
 
 .campo{
     display: flex;
@@ -205,14 +208,20 @@ li.lista-cursos p{
 }
 
 .campo__label{
-    flex: 0 0 9rem;
+    /* le decimos q no tiene factor de crecimiento */
+    flex: 0 0 9rem; 
     text-align: right;
     padding-right: 2rem
 }
 
 .campo__input{
+    /* todo el espacio que quede disponible lo va a ocupar el input con flex 1 */
     flex: 1;
     border: 1px solid var(--gris);
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 768px){
