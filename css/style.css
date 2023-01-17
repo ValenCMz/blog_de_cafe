@@ -191,9 +191,16 @@ li.lista-cursos p{
 
 /* contacto */
 
+.webp .imagen__formulario{
+    background-image: url(../img/nosotros.webp);
+}
+
+.no-webp .imagen__formulario{
+    background-image: url(../img/nosotros.jpg);
+}
+
 /* lo ponemos como background */
 .imagen__formulario{
-    background-image: url(../img/nosotros.jpg);
     height: 40rem;
     background-repeat: no-repeat;
     background-size: cover;
